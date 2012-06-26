@@ -1,0 +1,111 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+.site-name  a {
+  font-family: "Didact Gothic","Michroma" !important;
+  font-size: 1.59em;
+  /* color: #FFFF77; */
+  font-weight: 400;
+}
+.site-name a:hover {
+   color: #FF9900;
+}
+.site-name {
+  padding-bottom: .2em;
+}
+.site-slogan {
+  font-family: "Didact Gothic" !important;
+  /* color: #FFFFaa; */
+}
+.branding-data {
+  float: left;
+}
+.block-search {
+  float: right;
+  padding-right: 3em;
+  padding-top: 2.2em;
+  /* margin-bottom: 2em; */
+}
+#zone-branding-wrapper {
+  /*  background-color: #000036; */
+  /*  color: #FFFF33; */
+  padding-bottom: 1em;
+}
+#zone-branding-wrapper {
+    /* default background colour, for all layout engines that don't implement gradients */
+    /* background: #000036; */
+    
+    /* gecko based browsers */
+    /* background: -moz-linear-gradient(top, #000036, #111143); */
+
+    /* webkit based browsers */
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#000036), to(#101043)); */
+
+    /* color: #FFFF33; */ /* text colour (black) */
+    height: auto; /* gradient uses the full height of the element */
+    padding: 5px; /* distance from border edge to text */
+}
+
+#zone-menu-wrapper {
+   background: #cccccc;
+}
+#secondary-menu {
+   #float: right;
+}
+.navigation a {
+   text-decoration: none;
+}
+.navigation a:hover {
+   color: #FFFF33;
+}
+.main-menu li {
+   height: 100%;
+}
+.navigation li:hover {
+   background: #333333;
+}
+.navigation  {
+   height: 25px;
+   overflow: hidden;
+}
+
+article {
+   padding-bottom: 30px;
+   margin-bottom: 30px;
+   border-bottom: 1px #ccc solid;
+}
+article a {
+   text-decoration: none !important;
+   color: #333 !important;
+}
+.field-name-field-tags .field-item {
+   padding-right: .4em;
+}
+.field-name-field-tags {
+   padding-bottom: .6em;
+}
+article header h2 {
+   margin-bottom: 0em;
+}
+article img {
+   float: left;
+   padding-right: 1em;
+}
+article footer.submitted {
+   font-size: 0.8em;
+   color: #555;
+}
+article footer {
+   padding-bottom: 1em;
+}
+
+.section-content {
+   padding: 1em;
+}
+
+.secondary-menu {
+   float: right;
+}
+.main-menu {
+   margin-bottom: -10px;
+}
