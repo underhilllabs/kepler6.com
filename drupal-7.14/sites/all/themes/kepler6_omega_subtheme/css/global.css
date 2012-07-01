@@ -1,145 +1,334 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
-
-.site-name  a {
-  font-family: "Didact Gothic","Michroma" !important;
+/* line 7, ../sass/global.scss */
+.site-name a {
+  font-family: "Didact Gothic" !important;
   font-size: 1.59em;
   /* color: #FFFF77; */
   font-weight: 400;
 }
+
+/* line 13, ../sass/global.scss */
 .site-name a:hover {
-   color: #FF9900;
+  color: #FF9900;
 }
+
+/* line 16, ../sass/global.scss */
 .site-name {
   padding-bottom: .2em;
 }
+
+/* line 19, ../sass/global.scss */
 .site-slogan {
   font-family: "Didact Gothic" !important;
   /* color: #FFFFaa; */
 }
+
+/* line 23, ../sass/global.scss */
 .branding-data {
   float: left;
 }
+
+/* line 26, ../sass/global.scss */
 .block-search {
   float: right;
   padding-right: 3em;
   padding-top: 2.2em;
   /* margin-bottom: 2em; */
 }
+
+/* line 32, ../sass/global.scss */
 #zone-branding-wrapper {
   /*  background-color: #000036; */
   /*  color: #FFFF33; */
   padding-bottom: 1em;
 }
+
+/* line 38, ../sass/global.scss */
+.block-user-menu .block-title {
+  display: hidden;
+}
+/* line 41, ../sass/global.scss */
+.block-user-menu .menu li {
+  list-type: none;
+}
+
+/* line 45, ../sass/global.scss */
 #zone-branding-wrapper {
-    /* default background colour, for all layout engines that don't implement gradients */
-    /* background: #000036; */
-    
-    /* gecko based browsers */
-    /* background: -moz-linear-gradient(top, #000036, #111143); */
-
-    /* webkit based browsers */
-    /* background: -webkit-gradient(linear, left top, left bottom, from(#000036), to(#101043)); */
-
-    /* color: #FFFF33; */ /* text colour (black) */
-    height: auto; /* gradient uses the full height of the element */
-    padding: 5px; /* distance from border edge to text */
+  /* default background colour, for all layout engines that don't implement gradients */
+  /* background: #000036; */
+  /* gecko based browsers */
+  /* background: -moz-linear-gradient(top, #000036, #111143); */
+  /* webkit based browsers */
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#000036), to(#101043)); */
+  /* color: #FFFF33; */
+  /* text colour (black) */
+  height: auto;
+  /* gradient uses the full height of the element */
+  padding: 5px;
+  /* distance from border edge to text */
 }
 
+/* Menus Start */
+/* line 61, ../sass/global.scss */
 #zone-menu-wrapper {
-   background: #cccccc;
+  margin-top: 0;
+  padding: 0;
+  z-index: 1;
+  background: #cccccc;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(#ffffff, #cccccc);
+  background-image: -moz-linear-gradient(#ffffff, #cccccc);
+  background-image: -o-linear-gradient(#ffffff, #cccccc);
+  background-image: -ms-linear-gradient(#ffffff, #cccccc);
+  background-image: linear-gradient(#ffffff, #cccccc);
 }
-#secondary-menu {
-   #float: right;
-}
+
+/* line 68, ../sass/global.scss */
 .navigation a {
-   text-decoration: none;
+  text-decoration: none;
 }
+
+/* line 71, ../sass/global.scss */
 .navigation a:hover {
-   /* color: #FF9900; */
+  /* color: #FF9900; */
 }
+
+/* line 74, ../sass/global.scss */
+nav.navigation {
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 80, ../sass/global.scss */
 .main-menu li {
-   height: 100%;
-}
-.navigation  {
-   height: 25px;
-   overflow: hidden;
+  float: left;
+  vertical-align: top;
+  height: 100%;
 }
 
-article {
-   padding-bottom: 30px;
-   margin-bottom: 30px;
-   border-bottom: 1px #ccc solid;
+/* line 85, ../sass/global.scss */
+.main-menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-top: 0px;
+  height: 100%;
 }
-article a {
-   text-decoration: none !important;
-   color: #333 !important;
-}
-.field-name-field-tags .field-item {
-   padding-right: .4em;
-}
-.field-name-field-tags {
-   padding-bottom: .6em;
-}
-article header h2 {
-   margin-bottom: 0em;
-}
-article img {
-   float: left;
-   margin-right: 1em;
-}
-article footer.submitted {
-   font-size: 0.8em;
-   color: #555;
-}
-article footer {
-   padding-bottom: 1em;
+/* line 91, ../sass/global.scss */
+.main-menu li.menu-385, .main-menu li.menu-384, .main-menu li.menu-383 {
+  vertical-align: top;
+  height: 100%;
+  float: right;
 }
 
-.section-content {
-   padding: 1em;
+/* line 100, ../sass/global.scss */
+div.breadcrumb, div#breadcrumb {
+  display: none;
 }
 
-.secondary-menu {
-   float: right;
+/* line 103, ../sass/global.scss */
+aside#region-sidebar-second {
+  margin-top: 20px;
 }
-.navigation #main-menu {
-    padding-top: 5px;
-    align: center;
+/* line 106, ../sass/global.scss */
+aside#region-sidebar-second section.block {
+  border: 1px #ccc solid;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  background: #eee;
 }
-.navigation #main-menu {
-    padding-bottom: 10px;
-    /* background: red; */
+/* line 110, ../sass/global.scss */
+aside#region-sidebar-second section.block h2 {
+  background: #bada55;
+  padding-left: 5px;
 }
-.navigation #main-menu li {
-    height: 100%;
-    /* background: #ffaa00; */
-    vertical-align: middle;
-    padding-bottom: 10px;
-    padding-top: 10px;
+/* line 115, ../sass/global.scss */
+aside#region-sidebar-second section.block li.views-row {
+  border-bottom: 1px #661e3B dashed;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
 }
-.navigation #main-menu li:hover {
-    background: #FFaa00;
+/* line 120, ../sass/global.scss */
+aside#region-sidebar-second section.block li.views-row-last {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-.navigation #main-menu li.last {
-    margin-right: 0px;
+/* line 125, ../sass/global.scss */
+aside#region-sidebar-second section.block a {
+  text-decoration: none;
 }
+/* line 127, ../sass/global.scss */
+aside#region-sidebar-second section.block a:hover {
+  text-decoration: underline;
+}
+/* line 131, ../sass/global.scss */
+aside#region-sidebar-second section.block .views-field-name {
+  font-size: 0.75em;
+}
+/* line 132, ../sass/global.scss */
+aside#region-sidebar-second section.block .views-field-name a {
+  color: #333;
+}
+
+/* line 139, ../sass/global.scss */
 .navigation #secondary-menu {
-    padding-top: 2px;
-    vertical-align: middle;
+  position: absolute;
 }
+
+/* line 142, ../sass/global.scss */
+.navigation #main-menu li {
+  /* background: #ffaa00; */
+  vertical-align: middle;
+}
+
+/* line 149, ../sass/global.scss */
+.navigation #main-menu li:hover {
+  background: #FFaa00;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffee88), color-stop(100%, #ff2200));
+  background-image: -webkit-linear-gradient(#ffee88, #ff2200);
+  background-image: -moz-linear-gradient(#ffee88, #ff2200);
+  background-image: -o-linear-gradient(#ffee88, #ff2200);
+  background-image: -ms-linear-gradient(#ffee88, #ff2200);
+  background-image: linear-gradient(#ffee88, #ff2200);
+}
+
+/* line 158, ../sass/global.scss */
+article {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px #ccc solid;
+}
+
+/* line 163, ../sass/global.scss */
+article a {
+  text-decoration: none !important;
+  color: #333 !important;
+}
+
+/* line 167, ../sass/global.scss */
+.field-name-field-tags .field-item {
+  padding-right: .4em;
+}
+
+/* line 170, ../sass/global.scss */
+.field-name-field-tags {
+  padding-bottom: .6em;
+}
+
+/* line 173, ../sass/global.scss */
+article header h2 {
+  margin-bottom: 0em;
+}
+
+/* line 176, ../sass/global.scss */
+article img {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 180, ../sass/global.scss */
+article footer.submitted {
+  font-size: 0.8em;
+  color: #555;
+}
+
+/* line 184, ../sass/global.scss */
+article footer {
+  padding-bottom: 1em;
+}
+
+/* line 188, ../sass/global.scss */
+.section-content-wrapper {
+  padding: 1em;
+}
+
+/* line 192, ../sass/global.scss */
+.secondary-menu {
+  float: right;
+}
+
+/* line 195, ../sass/global.scss */
 .view-featured-articles .views-row {
-    border: 1px #eee dashed;
-    float:left;
-    margin-right: 20px;
-    width: 140px;
+  border: 1px #eee dashed;
+  float: left;
+  margin-right: 20px;
+  width: 140px;
 }
+
+/* line 201, ../sass/global.scss */
 .user-picture img {
-    margin-top: 10px;
-    margin-left: -80px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 100px;
-    width: 80px;
-    height: 80px;
+  margin-top: 10px;
+  margin-left: -80px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+}
+
+/* line 213, ../sass/global.scss */
+.starburst {
+  display: block;
+  width: 6em;
+  height: 6em;
+  background: #fe7;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  rotation: -45deg;
+  position: relative;
+  float: left;
+  top: 0.8em;
+  left: 12.5%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* line 232, ../sass/global.scss */
+.starburst span {
+  display: block;
+  width: 6em;
+  height: 6em;
+  background: #fe7;
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  -o-transform: rotate(22.5deg);
+  rotation: 22.5deg;
+}
+
+/* line 242, ../sass/global.scss */
+.section-header {
+  /* background: -moz-linear-gradient(top, white, #Fe8, yellow, orange, red, orange, yellow, white, blue) !important;  */
+  /* background: -o-linear-gradient(top, white,#Fe8, yellow, orange, red, orange, yellow, white, blue) !important;  */
+  /* background: linear-gradient(top, white,#Fe8, yellow, orange, red, orange, yellow, white, blue) !important;  */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(90%, #ffee88), color-stop(100%, #ffff00));
+  background-image: -webkit-linear-gradient(#ffffff, #ffee88 90%, #ffff00);
+  background-image: -moz-linear-gradient(#ffffff, #ffee88 90%, #ffff00);
+  background-image: -o-linear-gradient(#ffffff, #ffee88 90%, #ffff00);
+  background-image: -ms-linear-gradient(#ffffff, #ffee88 90%, #ffff00);
+  background-image: linear-gradient(#ffffff, #ffee88 90%, #ffff00);
+}
+
+/* line 254, ../sass/global.scss */
+ul li ol {
+  margin-left: 3em;
+}
+
+/* line 257, ../sass/global.scss */
+.zone-content-wrapper {
+  background: white;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin-bottom: 0.5em;
 }

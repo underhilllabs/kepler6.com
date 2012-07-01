@@ -1,0 +1,263 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+@import "compass";
+@import "compass/css3/border-radius";
+
+.site-name  a {
+  font-family: "Didact Gothic" !important;
+  font-size: 1.59em;
+  /* color: #FFFF77; */
+  font-weight: 400;
+}
+.site-name a:hover {
+   color: #FF9900;
+}
+.site-name {
+  padding-bottom: .2em;
+}
+.site-slogan {
+  font-family: "Didact Gothic" !important;
+  /* color: #FFFFaa; */
+}
+.branding-data {
+  float: left;
+}
+.block-search {
+  float: right;
+  padding-right: 3em;
+  padding-top: 2.2em;
+  /* margin-bottom: 2em; */
+}
+#zone-branding-wrapper {
+  /*  background-color: #000036; */
+  /*  color: #FFFF33; */
+  padding-bottom: 1em;
+}
+.block-user-menu {
+  .block-title {
+    display: hidden;
+  }
+  .menu li {
+     list-type: none;
+  }
+}
+#zone-branding-wrapper {
+    /* default background colour, for all layout engines that don't implement gradients */
+    /* background: #000036; */
+    
+    /* gecko based browsers */
+    /* background: -moz-linear-gradient(top, #000036, #111143); */
+
+    /* webkit based browsers */
+    /* background: -webkit-gradient(linear, left top, left bottom, from(#000036), to(#101043)); */
+
+    /* color: #FFFF33; */ /* text colour (black) */
+    height: auto; /* gradient uses the full height of the element */
+    padding: 5px; /* distance from border edge to text */
+}
+
+/* Menus Start */
+#zone-menu-wrapper {
+   margin-top: 0;
+   padding: 0;
+   z-index: 1;
+   background: #cccccc;
+   @include background-image(linear-gradient(color-stops(white, #ccc )));
+}
+.navigation a {
+   text-decoration: none;
+}
+.navigation a:hover {
+   /* color: #FF9900; */
+}
+nav.navigation  {
+   height: 25px;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+.main-menu li {
+  float: left;
+  vertical-align: top;
+  height: 100%;
+}
+.main-menu {
+  margin: 0;
+  padding: 0;
+  border:0;
+  margin-top: 0px;
+  height: 100%;
+  li.menu-385, li.menu-384, li.menu-383 {
+    vertical-align: top;
+    height: 100%;
+    float: right;
+    li.last {
+      //margin-right: 20%;
+    }
+  }
+}
+div.breadcrumb, div#breadcrumb {
+  display: none;
+}
+aside#region-sidebar-second {
+
+  margin-top: 20px;
+  section.block {
+    border: 1px #ccc solid;
+    @include border-radius(4px, 4px);
+    background: #eee;
+    h2 {
+      background: #bada55;
+      //@include background-image(linear-gradient(color-stops(white, #fe8)));
+      padding-left: 5px;
+    }
+    li.views-row {
+      border-bottom: 1px #661e3B dashed;
+      padding-bottom: 10px;
+      margin-bottom: 5px;
+    } 
+    li.views-row-last {
+      border-bottom:0;
+      margin-bottom:0;
+      padding-bottom:0;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .views-field-name {
+        a {
+          color: #333;
+        }
+        font-size: 0.75em;
+    }
+  }
+}
+.navigation #secondary-menu {
+  position: absolute;
+}
+.navigation #main-menu li {
+    //height: 100%;
+    /* background: #ffaa00; */
+    vertical-align: middle;
+    //padding-bottom: 10px;
+    //padding-top: 10px;
+}
+.navigation #main-menu li:hover {
+    background: #FFaa00;
+    //@include background-image(linear-gradient(color-stops(white, #FFaa00)));
+    @include background-image(linear-gradient(color-stops(#FFee88, #FF2200)));
+    //@include opacity(0.6);
+}
+//.navigation #main-menu li.last {
+//    margin-right: 0px;
+//}
+article {
+   padding-bottom: 30px;
+   margin-bottom: 30px;
+   border-bottom: 1px #ccc solid;
+}
+article a {
+   text-decoration: none !important;
+   color: #333 !important;
+}
+.field-name-field-tags .field-item {
+   padding-right: .4em;
+}
+.field-name-field-tags {
+   padding-bottom: .6em;
+}
+article header h2 {
+   margin-bottom: 0em;
+}
+article img {
+   float: left;
+   margin-right: 1em;
+}
+article footer.submitted {
+   font-size: 0.8em;
+   color: #555;
+}
+article footer {
+   padding-bottom: 1em;
+}
+
+.section-content-wrapper {
+   padding: 1em;
+}
+
+.secondary-menu {
+   float: right;
+}
+.view-featured-articles .views-row {
+    border: 1px #eee dashed;
+    float:left;
+    margin-right: 20px;
+    width: 140px;
+}
+.user-picture img {
+    margin-top: 10px;
+    margin-left: -80px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+
+.starburst {
+    display:block;
+    width:6em;
+    height:6em;
+    background:#fe7;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    rotation:-45deg;
+    position:relative;
+    float: left;
+    top:0.8em;
+    left:12.5%;
+    text-align:center;
+    text-decoration:none;
+    color:#000;
+    font-weight:bold;
+    font-family:Arial, sans-serif;
+}
+.starburst span {
+    display:block;
+    width:6em;
+    height:6em;
+    background:#fe7;
+    -webkit-transform:rotate(22.5deg);
+    -moz-transform:rotate(22.5deg);
+    -o-transform:rotate(22.5deg);
+    rotation:22.5deg;
+}
+.section-header {
+    /* background: -moz-linear-gradient(top, white, #Fe8, yellow, orange, red, orange, yellow, white, blue) !important;  */
+    /* background: -o-linear-gradient(top, white,#Fe8, yellow, orange, red, orange, yellow, white, blue) !important;  */
+    /* background: linear-gradient(top, white,#Fe8, yellow, orange, red, orange, yellow, white, blue) !important;  */
+
+    @include background-image(linear-gradient(color-stops(white,#Fe8 90%,yellow)));
+    //background: -webkit-linear-gradient(top, white,#Fe8 90%, yellow); 
+    //background: -o-linear-gradient(top, white,#Fe8 90%, yellow); 
+    //background: -moz-linear-gradient(top, white 7%,#Fec,#Fe8 90%, yellow); 
+    //background: linear-gradient(top, white,#Fe8 90%, yellow); 
+    //background: -ms-linear-gradient(top, white,#Fe8 90%, yellow); 
+}
+ul li ol {
+  margin-left: 3em;
+}
+.zone-content-wrapper {
+
+    background: white;
+    margin-left:0.2em;
+    margin-right:0.2em;
+    margin-bottom:0.5em;
+}
