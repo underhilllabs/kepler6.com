@@ -37,14 +37,24 @@ li a.active {
  */
 /* line 47, ../sass/navigation.scss */
 #navigation {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  height: auto;
+  background: #cccccc;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(#ffffff, #cccccc);
+  background-image: -moz-linear-gradient(#ffffff, #cccccc);
+  background-image: -o-linear-gradient(#ffffff, #cccccc);
+  background-image: linear-gradient(#ffffff, #cccccc);
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
 }
-/* line 50, ../sass/navigation.scss */
+/* line 56, ../sass/navigation.scss */
 #navigation .block {
   margin-bottom: 0;
 }
-/* line 55, ../sass/navigation.scss */
+/* line 61, ../sass/navigation.scss */
 #navigation .block-menu .block-title,
 #navigation .block-menu-block .block-title {
   position: absolute !important;
@@ -53,7 +63,7 @@ li a.active {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 60, ../sass/navigation.scss */
+/* line 66, ../sass/navigation.scss */
 #navigation ul.links,
 #navigation ul.menu {
   /* Menu block links */
@@ -62,7 +72,7 @@ li a.active {
   text-align: left;
   /* LTR */
 }
-/* line 65, ../sass/navigation.scss */
+/* line 71, ../sass/navigation.scss */
 #navigation ul.links li,
 #navigation ul.menu li {
   /* A simple method to get navigation links to appear in one line. */
@@ -73,11 +83,15 @@ li a.active {
   list-style-type: none;
   list-style-image: none;
 }
+/* line 78, ../sass/navigation.scss */
+#navigation #main-menu ul li.first {
+  margin-left: 10px;
+}
 
 /*
  * Main menu and Secondary menu links
  */
-/* line 84, ../sass/navigation.scss */
+/* line 90, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
@@ -92,13 +106,13 @@ li a.active {
  * Drupal core has limited ways in which it can display its menus. To get around
  * these limitations, see http://drupal.org/project/menu_block
  */
-/* line 104, ../sass/navigation.scss */
+/* line 110, ../sass/navigation.scss */
 #main-menu li a {
   margin-top: -13px !important;
   margin-bottom: -13px !important;
 }
 
-/* line 108, ../sass/navigation.scss */
+/* line 114, ../sass/navigation.scss */
 #main-menu li a:hover {
   background: #c60000;
 }

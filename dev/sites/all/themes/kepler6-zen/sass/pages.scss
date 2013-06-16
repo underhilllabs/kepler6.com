@@ -46,7 +46,8 @@ body {
  */
 
 #header {
-  background: #ff9955;
+  background: #fe8;
+  @include background-image(linear-gradient(color-stops(white,#Fe8 90%,yellow)));
 }
 
 #logo { /* Wrapping link for logo */
@@ -86,12 +87,9 @@ body {
   /* color: #FFFF77; */
   font-weight: 400;
 }
-#site-name a:hover  {
+#site-name a:hover {
    color: #FF9900;
    text-decoration: none;
-}
-.site-name {
-  padding-bottom: .2em;
 }
 .block-search {
   float: right;
@@ -107,14 +105,11 @@ body {
      list-type: none;
   }
 }
-#site-slogan {
-  font-family: "Didact Gothic" !important;
-  /* color: #FFFFaa; */
-}
 .branding-data {
   float: left;
 }
 #site-slogan { /* The slogan (or tagline) of a website */
+  font-family: "Didact Gothic" !important;
   margin: 0;
   font-size: 1em;
 }
@@ -161,13 +156,22 @@ h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
 }
-
+h2 > a {
+  text-decoration: none !important;
+  color: #333 !important;
+}
 tr.even { /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
 
 tr.odd {
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+article {
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */

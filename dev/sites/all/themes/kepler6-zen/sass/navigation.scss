@@ -45,6 +45,12 @@ li a.active {
  */
 
 #navigation {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  height: auto;
+  background: #cccccc;
+  @include background-image(linear-gradient(color-stops(white, #ccc )));
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
 
   .block {
@@ -69,8 +75,10 @@ li a.active {
       list-style-image: none;
     }
   }
+  #main-menu ul li.first {
+    margin-left: 10px;
+  }
 }
-
 .region-navigation {
 }
 
@@ -78,8 +86,6 @@ li a.active {
  * Main menu and Secondary menu links
  */
 
-#main-menu {
-}
 
 #secondary-menu {
   float: right; /* LTR */
